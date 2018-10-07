@@ -7,31 +7,44 @@
   "author": "Jiri Spac <capajj@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "cd frontend && parcel index.html"
+    "dev": "cd frontend && parcel index.html",
+    "jestw": "jest --watch"
   },
   "bin": {
     "querybook": "./bin/querybook"
   },
   "devDependencies": {
-    "@types/jest": "^23.3.2",
+    "@types/jest": "^23.3.3",
     "@types/koa": "^2.0.46",
     "@types/koa-logger": "^3.1.0",
     "@types/koa-static": "^4.0.0",
-    "@types/react": "^16.4.14",
-    "@types/react-dom": "^16.0.7",
+    "@types/react": "^16.4.15",
+    "@types/react-dom": "^16.0.8",
     "cross-env": "^5.2.0",
-    "gh-pages": "^1.2.0",
+    "gh-pages": "^2.0.1",
     "jest": "^23.6.0",
-    "parcel-bundler": "^1.9.7",
-    "prettier": "^1.14.2",
+    "less": "^3.8.1",
+    "mobx": "^5.5.0",
+    "mobx-react": "^5.2.8",
+    "parcel-bundler": "^1.10.2",
+    "prettier": "^1.14.3",
+    "stringify-object": "^3.2.2",
+    "ts-jest": "^23.10.4",
     "ts-node-dev": "^1.0.0-pre.30",
-    "typescript": "^3.0.3"
+    "typescript": "^3.1.1"
   },
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "graphiql": "^0.12.0",
+    "graphql": "^14.0.2",
+    "graphql-language-service-interface": "^2.0.0",
+    "graphql-tag": "^2.10.0",
     "koa": "^2.5.3",
     "koa-logger": "^3.2.0",
     "koa-static": "^5.0.0",
-    "react": "^16.5.1",
-    "react-dom": "^16.5.1"
+    "react": "^16.5.2",
+    "react-bound": "^0.4.7",
+    "react-dom": "^16.5.2",
+    "unfetch": "^4.0.1"
   }
 }
