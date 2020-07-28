@@ -2,12 +2,21 @@ import parametrizeQuery from './parametrizeQuery'
 
 describe('queryParametrizer', function() {
   it('should parametrize queries', async () => {
-    expect(parametrizeQuery(`{ foo (first: 213) { ok koo } }`))
-      .toMatchInlineSnapshot(`
-"query {
-  foo(first: $fooFirst) {
+    expect(
+      parametrizeQuery(
+        `{ foo (first: 213) { ok koo } foo2(second: "aaa") {id} foo3(dupe: {a: "aaa"}) {id} }`
+      )
+    ).toMatchInlineSnapshot(`
+"query ($first: Int, $second: String, $dupe: Object) {
+  foo(first: $first) {
     ok
     koo
+  }
+  foo2(second: $second) {
+    id
+  }
+  foo3(dupe: $dupe) {
+    id
   }
 }
 "
