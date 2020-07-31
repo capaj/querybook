@@ -5,7 +5,7 @@
   "main": "dist/querybook.js",
   "repository": "git@github.com:capaj/querybook.git",
   "author": "Jiri Spac <capajj@gmail.com>",
-  "license": "MIT",
+  "license": "GPL-3.0",
   "scripts": {
     "dev": "cd frontend && parcel index.html",
     "jw": "jest --watch"
@@ -14,18 +14,18 @@
     "querybook": "./bin/querybook"
   },
   "devDependencies": {
-    "@types/jest": "^26.0.7",
+    "@types/jest": "^26.0.8",
     "@types/koa": "^2.11.3",
     "@types/koa-logger": "^3.1.1",
     "@types/koa-static": "^4.0.1",
-    "@types/react": "^16.9.43",
+    "@types/react": "^16.9.44",
     "@types/react-dom": "^16.9.8",
     "cross-env": "^7.0.2",
     "gh-pages": "^3.1.0",
-    "jest": "^26.1.0",
+    "jest": "^26.2.2",
     "less": "^3.12.2",
     "mobx": "^5.15.4",
-    "mobx-react": "^6.2.3",
+    "mobx-react": "^6.2.5",
     "parcel-bundler": "^1.12.4",
     "prettier": "^2.0.5",
     "stringify-object": "^3.3.0",
@@ -45,6 +45,6 @@
     "react": "^16.13.1",
     "react-bound": "^0.4.7",
     "react-dom": "^16.13.1",
-    "unfetch": "^4.0.1"
+    "unfetch": "^4.1.0"
   }
 }
